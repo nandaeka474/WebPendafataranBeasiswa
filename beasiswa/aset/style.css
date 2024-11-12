@@ -1,0 +1,50 @@
+/* General Styles for html and body */
+html, body {
+    height: 100%; /* Ensures html and body fill the viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Ensures the main content fills the available space */
+}
+
+/* Header Styles */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 280px; /* Adjust image height */
+    overflow: hidden;
+}
+
+.header-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #89CFF0; /* Baby blue color */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000; /* Navbar text color */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #0056b3; /* Active navbar link color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #89CFF0; /* Baby blue color */
+    color: #000; /* Footer text color */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Adds padding */
+    border-top: 1px solid #ddd; /* Top border line */
+}

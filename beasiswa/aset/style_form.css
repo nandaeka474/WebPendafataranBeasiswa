@@ -1,0 +1,66 @@
+/* Custom styles for layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-col, .form-col-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-col {
+    margin-bottom: 15px;
+}
+
+.form-col-right {
+    margin-left: 20px; /* Ensure there's space between the columns */
+}
+
+.form-col .form-group, .form-col-right .form-group {
+    margin-bottom: 15px;
+}
+
+/* Header dan navbar */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 280px; 
+    overflow: hidden;
+}
+
+.header-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #89CFF0; /* Warna baby blue */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000; /* Warna teks navbar */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #0056b3; /* Warna aktif link navbar */
+}
+
+.form-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Gaya tambahan untuk IPK */
+.form-control[readonly] {
+    background-color: #f0f0f0; /* Warna abu-abu untuk IPK */
+}
+
+/* Footer */
+footer {
+    background-color: #89CFF0; /* Warna baby blue */
+    color: #000; /* Warna teks footer */
+}

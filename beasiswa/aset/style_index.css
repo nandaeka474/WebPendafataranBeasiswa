@@ -1,0 +1,40 @@
+.hero {
+    position: relative;
+    color: white;
+    overflow: hidden; /* Menyembunyikan bagian gambar yang meluber */
+}
+
+.hero-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjaga rasio gambar dan menutupi area */
+    z-index: -1; /* Menempatkan gambar di belakang konten */
+}
+
+.hero-content {
+    position: relative; /* Membuat konten berada di atas gambar */
+    z-index: 1; /* Menyusun konten di atas gambar */
+    text-align: center;
+    padding: 0 15px; /* Opsional: Untuk memberikan padding di sisi */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero .btn-light {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn-light:hover {
+    background-color: #ffc107;
+    color: #212529;
+}
